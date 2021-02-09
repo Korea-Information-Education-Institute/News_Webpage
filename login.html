@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 화면</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./loginRegister.css">
+    <script>
+        function printlogin(){
+            alert("로그인 성공")
+            // self.close();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topMenu">
+        <h2><a href="#">한국 정보 교육원 타임지</a></h2>
+        <div class="topMenuLogin">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="topMenuLogout">
+            <ul>
+                <li>사용자님 환영합니다</li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="topNavi">
+        <ul>
+            <li><a href="#">Hot issue</a></li>
+            <li><a href="#">경제</a></li>
+            <li><a href="#">사회</a></li>
+            <li><a href="#">IT/과학</a></li>
+        </ul>
+    </div>
+    <div class="login">
+        <form action="">
+            아이디 <input type="text" name="id" id="id"><br><br><br>
+            비밀번호 <input type="password" name="pw" id="pw"><br><br>
+            <span><input type="checkbox" name="loginCheck" id="loginCheck">&nbsp;로그인 유지</span><br><br>
+            <input type="submit" value="로그인" onclick="printlogin()">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="초기화">
+        </form>
+    </div>
+</body>
+
+</html>

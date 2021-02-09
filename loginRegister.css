@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.login,.register{
+	width: 980px;
+	margin: 0 auto;
+    height: 750px;
+    background-color: aqua;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.login>form>input[type="submit"],.login>form>input[type="reset"],.register>form>input[type="submit"],.register>form>input[type="reset"]{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.login>form>span,.register>form>span{
+    font-size: 14px;
+}
