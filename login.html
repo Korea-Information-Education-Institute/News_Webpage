@@ -9,8 +9,23 @@
     <link rel="stylesheet" href="./homepage.css">
     <link rel="stylesheet" href="./loginRegister.css">
     <script>
-        function printlogin(){
-            alert("로그인 성공")
+        function inputCheck(){
+            var id=document.getElementById('id').value
+            var pw=document.getElementById("pw").value
+            var check=false
+            if(id.length==0){
+                //document.getElementById('warning').innerHTML='아이디를 입력하시오'
+                alert("아이디를 입력하시오")
+            }else if(pw.length==0){
+                alert("비밀번호를 입력하시오")
+            }else{
+                check=true
+            }
+            return check
+            // self.close();
+        }
+        function gotoRegister(){
+            location.replace("./register.html")
             // self.close();
         }
     </script>
@@ -18,11 +33,11 @@
 
 <body>
     <div class="topMenu">
-        <h2><a href="#">한국 정보 교육원 타임지</a></h2>
+        <h2><a href="./index.html">한국 정보 교육원 타임지</a></h2>
         <div class="topMenuLogin">
             <ul>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./register.html">회원가입</a></li>
             </ul>
         </div>
         <div class="topMenuLogout">
@@ -35,18 +50,18 @@
     </div>
     <div class="topNavi">
         <ul>
-            <li><a href="#">Hot issue</a></li>
+            <li><a href="./hotIssue.html">Hot issue</a></li>
             <li><a href="#">경제</a></li>
             <li><a href="#">사회</a></li>
             <li><a href="#">IT/과학</a></li>
         </ul>
     </div>
     <div class="login">
-        <form action="">
+        <form action="" onsubmit="return inputCheck()">
             아이디 <input type="text" name="id" id="id"><br><br><br>
             비밀번호 <input type="password" name="pw" id="pw"><br><br>
             <span><input type="checkbox" name="loginCheck" id="loginCheck">&nbsp;로그인 유지</span><br><br>
-            <input type="submit" value="로그인" onclick="printlogin()">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="초기화">
+            <input type="submit" value="로그인">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="회원가입하기" onclick="gotoRegister()">
         </form>
     </div>
 </body>
