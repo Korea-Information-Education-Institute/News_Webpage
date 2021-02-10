@@ -11,7 +11,7 @@
     display: table-cell;
     vertical-align: middle;
 }
-.login>form>input[type="submit"],.login>form>input[type="reset"],.register>form>input[type="submit"],.register>form>input[type="reset"]{
+.login>form>input[type="submit"],.login>form>input[type="button"],.register>form>input[type="submit"],.register>form>input[type="reset"]{
     width: 80px;
     height: 40px;
     border-radius: 5px;
