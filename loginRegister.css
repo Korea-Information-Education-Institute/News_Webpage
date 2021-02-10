@@ -2,6 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	width: 980px;
+    height: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
 .login,.register{
 	width: 980px;
 	margin: 0 auto;
