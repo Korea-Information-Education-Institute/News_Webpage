@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 980px;
+	height: 1350px;
+	position: relative;
+	margin: 0 auto;
+}
+.mainContent{
+    margin-top: 20px;
+    text-align: center;
+}
+#scrap{
+    width: 55px;
+    background-color: seashell;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#scrap:hover{
+    width: 55px;
+    background-color: seashell;
+    border: 2px solid black;
+    border-radius: 5px;
+}
