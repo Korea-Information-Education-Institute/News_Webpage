@@ -18,7 +18,13 @@
                 alert("아이디를 입력하시오")
             }else if(pw.length==0){
                 alert("비밀번호를 입력하시오")
-            }else{
+            }else if(id=="test" && pw=="test"){
+                var login=document.getElementById("topMenuLogin")
+                var logout=document.getElementById("topMenuLogout")
+                login.style.display='none';
+                logout.style.display='block';
+            }
+            else{
                 check=true
             }
             return check
@@ -34,13 +40,13 @@
 <body>
     <div class="topMenu">
         <h2><a href="./index.html">한국 정보 교육원 타임지</a></h2>
-        <div class="topMenuLogin">
+        <div class="topMenuLogin" id="topMenuLogin">
             <ul>
                 <li><a href="./login.html">로그인</a></li>
                 <li><a href="./register.html">회원가입</a></li>
             </ul>
         </div>
-        <div class="topMenuLogout">
+        <div class="topMenuLogout" id="topMenuLogout">
             <ul>
                 <li>사용자님 환영합니다</li>
                 <li><a href="#">로그아웃</a></li>
@@ -57,11 +63,11 @@
     </ul>
     </div>
     <div class="login">
-        <form action="" onsubmit="return inputCheck()">
+        <form action="#">
             아이디 <input type="text" name="id" id="id"><br><br><br>
             비밀번호 <input type="password" name="pw" id="pw"><br><br>
             <span><input type="checkbox" name="loginCheck" id="loginCheck">&nbsp;로그인 유지</span><br><br>
-            <input type="submit" value="로그인">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="회원가입하기" onclick="gotoRegister()">
+            <input type="button" value="로그인" onclick="inputCheck();">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="회원가입하기" onclick="gotoRegister()">
         </form>
     </div>
     <div class="footer">

@@ -26,6 +26,9 @@ li{
  	top: 30px;
 	left: 20px;
 }
+.topMenu>.topMenuLogin{
+	display: block;
+}
 .topMenu>.topMenuLogin>ul{
 	position: absolute;
 	top: 30px;
@@ -41,12 +44,14 @@ li{
 .topMenu>.topMenuLogin>ul>li>a{
 	color:white;
 }
+.topMenu>.topMenuLogout{
+	display: none;
+}
 .topMenu>.topMenuLogout>ul{
 	position: absolute;
 	top: 30px;
 	right: 20px;
 	float: right;
-	display: none;
 }
 .topMenu>.topMenuLogout>ul>li{
 	float: left;
